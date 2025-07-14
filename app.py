@@ -3,8 +3,10 @@ import requests
 from flask import Flask, request, jsonify
 from pptx import Presentation
 from io import BytesIO
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/extract-text', methods=['POST'])
 def extract_ppt_text():
