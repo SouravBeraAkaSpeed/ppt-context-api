@@ -19,8 +19,7 @@ def welcome():
     A simple welcome route to confirm the API is running.
     """
     return jsonify({
-        "message": "Welcome to the Document Text Extractor API!",
-        "instructions": "Send a POST request to /extract-text with a JSON body containing 'file_uri' (e.g., {'file_uri': 'http://example.com/your_document.pptx'})"
+        "message": "Welcome to the Document Context API!",
     })
 
 @app.route('/extract-text', methods=['POST'])
